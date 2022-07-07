@@ -1,5 +1,5 @@
 // https://crackmes.one/crackme/617581d833c5d4329c3452ce
-// C++ Solution by Sokks
+// C++ Solution by Carlos Zatarain
 // Reverse engineered using Ghidra's decompiler and http://demangler.com/
 // 7/7/2022
 
