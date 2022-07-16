@@ -19,23 +19,25 @@
 
 #include <iostream>
 #include <string>
+#include <stdlib.h>
+#include <time.h>
 
 int main()
 {
-    std::cout << "Enter your name: ";
+    srand(time(NULL));
 
-    std::string name;
-    std::cin >> name;
-
-    size_t nameLength = name.length();
+    std::string name = "";
+    size_t nameLength = 1 + (rand() % 20);
     int asciiSum = 0;
     int lVar = nameLength + 3 * (nameLength >> 1);
 
     for (size_t i = 0; i < nameLength; i++)
     {
+        name += 33 + (rand() % 94);
         asciiSum += name[i] + i + 4;
     }
 
+    std::cout << "Name: " << name << std::endl;
     std::cout << "Serial number: " << (lVar) << '-' << asciiSum << std::endl;
 
     return 0;

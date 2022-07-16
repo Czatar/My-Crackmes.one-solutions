@@ -13,22 +13,30 @@
 
 #include <iostream>
 #include <string>
+#include <stdlib.h>
+#include <time.h>
 
 int main()
 {
-    std::cout << "user: ";
+    srand(time(NULL));
 
-    std::string key;
-    std::cin >> key;
+    size_t keyLength = 1 + (rand() % 20);
 
-    size_t keyLength = key.length();
+    std::string user, key;
+    char uChar, kChar;
 
     for (size_t i = 0; i < keyLength; i++)
     {
-        key[i] ^= 4;
-        key[i] += keyLength;
+        do {
+            uChar = 33 + (rand() % 94);
+            kChar = (uChar ^ 4) + keyLength;
+        } while(kChar < 33 || kChar > 126);
+
+        user += uChar;
+        key += kChar;
     }
 
+    std::cout << "user: " << user << std::endl;
     std::cout << "serial: " << key << std::endl;
 
     return 0;

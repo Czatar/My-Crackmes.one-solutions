@@ -22,23 +22,22 @@
 
 #include <iostream>
 #include <string>
+#include <stdlib.h>
+#include <time.h>
 
 int main()
 {
-    std::cout << "Length of username must be between 2 and 20 inclusive.";
-    std::cout << std::endl << std::endl << "Type your username: ";
+    srand(time(NULL));
 
-    std::string name;
-    std::cin >> name;
+    std::string name = "";
+    size_t nameLength = 2 + (rand() % 19);
 
-    size_t nameLength = name.length();
-
-    while (nameLength < 2 || nameLength > 20)
+    for (size_t i = 0; i < nameLength; i++)
     {
-        std::cout << std::endl << "Type a valid username: ";
-        std::cin >> name;
-        nameLength = name.length();
+        name += 33 + (rand() % 94);
     }
+
+    std::cout << "username: " << name << std::endl;
 
     if (nameLength <= 7)
     {

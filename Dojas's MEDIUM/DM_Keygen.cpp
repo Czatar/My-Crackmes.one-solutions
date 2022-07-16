@@ -13,24 +13,26 @@
 
 #include <iostream>
 #include <string>
+#include <stdlib.h>
+#include <time.h>
 
 int main()
 {
-    std::cout << "user: ";
+    srand(time(NULL));
 
-    std::string user;
-    std::cin >> user;
+    size_t keyLength = 1 + (rand() % 15);
 
-    size_t userLength = user.length();
+    std::string user = "";
+    int password = 0;
 
-    int realPassword = 0;
-
-    for (size_t i = 0; i < userLength; i++)
+    for (size_t i = 0; i < keyLength; i++)
     {
-        realPassword += user[i] * 4;
+        user += 33 + (rand() % 94);
+        password += user[i] * 4;
     }
 
-    std::cout << "password: " << realPassword << std::endl;
+    std::cout << "username: " << user << std::endl;
+    std::cout << "password: " << password << std::endl;
 
     return 0;
 }
