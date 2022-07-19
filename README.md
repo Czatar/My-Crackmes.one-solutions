@@ -13,6 +13,6 @@ https://crackmes.one/
 
 I have solved:
 --------------
-Difficulty 1: 4
-Difficulty 2: 7
-Total: 11
+> Difficulty 1: 4
+> Difficulty 2: 7
+> Total: 11
