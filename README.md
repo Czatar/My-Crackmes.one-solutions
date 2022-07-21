@@ -4,7 +4,7 @@ Here is where I will upload my solutions / keygens to each challenge that I crac
 
 This repository is organized by separating each challenge into their respective folders. Each folder is also categorized by the website's difficulty rating.
 Typically, each folder will have:
-1. A makefile to compile and run my solution (compatible with Windows, Mac and Linux given that you have cmake / gnu installed).
+1. A Makefile to compile and run my solution (compatible with Windows, Mac and Linux given that you have CMake / GNU installed).
 2. The source code file to my solution along with a written explanation as to how I cracked the challenge.
 3. The .exe file of the original challenge that I used to crack, for convenience.
 
@@ -16,6 +16,6 @@ I have solved:
 ```
 Difficulty 1: 4
 Difficulty 2: 7
-Difficulty 3: 1
-Total: 12
+Difficulty 3: 2
+Total: 13
 ```
