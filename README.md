@@ -15,7 +15,7 @@ I have solved:
 --------------
 ```
 Difficulty 1: 4
-Difficulty 2: 7
+Difficulty 2: 8
 Difficulty 3: 2
-Total: 13
+Total: 14
 ```
