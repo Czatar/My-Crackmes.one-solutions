@@ -14,8 +14,8 @@ https://crackmes.one/
 I have solved:
 --------------
 ```
-Difficulty 1: 4
+Difficulty 1: 5
 Difficulty 2: 8
 Difficulty 3: 2
-Total: 14
+Total: 15
 ```
